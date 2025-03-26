@@ -6,7 +6,7 @@ mkdir /my-cron-files/reboot-logs
 mkdir /my-cron-files/scripts
 
 
-LOG_DATE=$(date '+%Y-%m-%d_%H:%M.%S')
+LOG_DATE=$\(date\ \'+%Y-%m-%d_%H:%M.%S\'\)
 CRON_SCHEDULE_1="0 1 * * *"
 CRON_SCRIPT_1="/my-cron-files/scripts/update-me.sh"
 CRON_JOB_1="$CRON_SCHEDULE_1 $CRON_SCRIPT_1"
