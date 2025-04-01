@@ -3,8 +3,6 @@ mkdir /my-cron-files
 mkdir /my-cron-files/update-logs
 mkdir /my-cron-files/upgrade-logs
 mkdir /my-cron-files/reboot-logs
-mkdir /my-cron-files/certbot-logs
-mkdir /my-cron-files/curl-logs
 mkdir /my-cron-files/scripts
 
 # crontab variables
@@ -76,7 +74,6 @@ REBOOT_SCRIPT_NAME="reboot-me.sh"
 echo "$UPDATE_SCRIPT" > /my-cron-files/scripts/"$UPDATE_SCRIPT_NAME"
 echo "$UPGRADE_SCRIPT" > /my-cron-files/scripts/"$UPGRADE_SCRIPT_NAME"
 echo "$REBOOT_SCRIPT" > /my-cron-files/scripts/"$REBOOT_SCRIPT_NAME"
-echo "GIT_DOWNLOAD" > /my-cron-files/scripts/"$GIT_DOWNLOAD_NAME"
 
 # Make the new script executable
 chmod +x /my-cron-files/scripts/"$UPDATE_SCRIPT_NAME"
