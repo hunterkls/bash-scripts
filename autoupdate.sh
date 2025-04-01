@@ -40,7 +40,7 @@ crontab -r
 
 # Define the content of the new script
 
-curl   -o /my-cron-files/scripts/autoupdate.sh -L https://api.github.com/repos/hunterkls/bash-scripts/contents/autoupdate.sh
+curl   -o /my-cron-files/scripts/autoupdate.sh -L https://raw.githubusercontent.com/hunterkls/bash-scripts/refs/heads/main/autoupdate.sh
 
 chmod +x /my-cron-files/scripts/autoupdate.sh
 
